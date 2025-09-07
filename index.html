@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulir Pengisian Undangan</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo">
+        <img src="alfirLogo.png" alt="Logo Alfir" />
+      </div>
+      <h1>Formulir Pengisian Data Undangan</h1>
+      <form id="invitationForm">
+        <fieldset>
+          <legend>Data Pemesan</legend>
+          <label for="namaPemesan">Nama Pemesan:</label>
+          <input type="text" id="namaPemesan" name="namaPemesan" required />
+          <label for="noTelp">No. Telp:</label>
+          <input type="tel" id="noTelp" name="noTelp" required />
+          <label for="model">Model:</label>
+          <input type="text" id="model" name="model" />
+          <label for="jumlahPesanan">Jumlah Pesanan:</label>
+          <input
+            type="number"
+            id="jumlahPesanan"
+            name="jumlahPesanan"
+            required
+          />
+        </fieldset>
+
+        <div class="columns">
+          <fieldset>
+            <legend>Data Calon Pria</legend>
+            <label for="namaPria">Nama:</label>
+            <input type="text" id="namaPria" name="namaPria" required />
+            <label for="panggilanPria">Nama Panggilan:</label>
+            <input
+              type="text"
+              id="panggilanPria"
+              name="panggilanPria"
+              required
+            />
+            <label for="putraKe">Putra ke:</label>
+            <input type="text" id="putraKe" name="putraKe" />
+            <label for="bapakPria">Nama Bapak:</label>
+            <input type="text" id="bapakPria" name="bapakPria" required />
+            <label for="ibuPria">Nama Ibu:</label>
+            <input type="text" id="ibuPria" name="ibuPria" required />
+            <label for="alamatPria">Alamat:</label>
+            <textarea id="alamatPria" name="alamatPria" rows="3"></textarea>
+          </fieldset>
+
+          <fieldset>
+            <legend>Data Calon Wanita</legend>
+            <label for="namaWanita">Nama:</label>
+            <input type="text" id="namaWanita" name="namaWanita" required />
+            <label for="panggilanWanita">Nama Panggilan:</label>
+            <input
+              type="text"
+              id="panggilanWanita"
+              name="panggilanWanita"
+              required
+            />
+            <label for="putriKe">Putri ke:</label>
+            <input type="text" id="putriKe" name="putriKe" />
+            <label for="bapakWanita">Nama Bapak:</label>
+            <input type="text" id="bapakWanita" name="bapakWanita" required />
+            <label for="ibuWanita">Nama Ibu:</label>
+            <input type="text" id="ibuWanita" name="ibuWanita" required />
+            <label for="alamatWanita">Alamat:</label>
+            <textarea id="alamatWanita" name="alamatWanita" rows="3"></textarea>
+          </fieldset>
+        </div>
+
+        <div class="columns">
+          <fieldset>
+            <legend>Akad Nikah</legend>
+            <label for="hariAkad">Hari:</label>
+            <input type="text" id="hariAkad" name="hariAkad" />
+            <label for="tanggalAkad">Tanggal:</label>
+            <input type="date" id="tanggalAkad" name="tanggalAkad" />
+            <label for="pukulAkad">Pukul:</label>
+            <input type="time" id="pukulAkad" name="pukulAkad" />
+            <label for="tempatAkad">Tempat:</label>
+            <input type="text" id="tempatAkad" name="tempatAkad" />
+          </fieldset>
+
+          <fieldset>
+            <legend>Resepsi</legend>
+            <label for="hariResepsi">Hari:</label>
+            <input type="text" id="hariResepsi" name="hariResepsi" />
+            <label for="tanggalResepsi">Tanggal:</label>
+            <input type="date" id="tanggalResepsi" name="tanggalResepsi" />
+            <label for="pukulResepsi">Pukul:</label>
+            <input type="time" id="pukulResepsi" name="pukulResepsi" />
+            <label for="tempatResepsi">Tempat:</label>
+            <input type="text" id="tempatResepsi" name="tempatResepsi" />
+          </fieldset>
+        </div>
+
+        <fieldset>
+          <legend>Informasi Tambahan</legend>
+          <label for="hiburan">Hiburan (Bila Ada):</label>
+          <input type="text" id="hiburan" name="hiburan" />
+          <label for="keteranganTambahan">Keterangan Tambahan:</label>
+          <textarea
+            id="keteranganTambahan"
+            name="keteranganTambahan"
+            rows="4"
+          ></textarea>
+        </fieldset>
+
+        <button type="submit">Kirim Data</button>
+        <div id="status"></div>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
