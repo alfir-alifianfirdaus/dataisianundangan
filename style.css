@@ -13,7 +13,7 @@ body {
   padding: 20px;
 }
 .container {
-  background: linear-gradient(to left, rgb(128, 128, 128), rgb(113, 255, 177));
+  background: linear-gradient(to left, rgb(228, 228, 228), rgb(213, 255, 255));
   padding: 30px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -110,6 +110,6 @@ button:hover {
   }
   .logo img {
     width: auto;
-    height: 50px;
+    height: 80px;
   }
 }
